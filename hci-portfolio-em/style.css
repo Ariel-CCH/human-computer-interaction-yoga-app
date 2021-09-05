@@ -395,7 +395,7 @@ img{
     }
 
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     #progress-bar-container li .step-inner {
         position:absolute;
         width:75%;
