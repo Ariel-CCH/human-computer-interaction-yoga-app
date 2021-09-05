@@ -379,6 +379,12 @@ img{
         margin-left: 5%;
         margin-right: 5%;
     }
+    #progress-bar-container li .step-inner {
+        position:absolute;
+        width:80%;
+        bottom:0;
+        font-size: 0.5em;
+    }
     #flex-container{
         flex-direction: column; 
     }
@@ -390,6 +396,12 @@ img{
 
 }
 @media only screen and (max-width: 768px) {
+    #progress-bar-container li .step-inner {
+        position:absolute;
+        width:75%;
+        bottom:0;
+        font-size: 0.5em;
+    }
     #flex-container{
         flex-direction: column; 
     }
