@@ -395,7 +395,7 @@ img{
     }
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     #progress-bar-container li .step-inner {
         position:absolute;
         width:75%;
@@ -410,14 +410,14 @@ img{
 
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up)
 @media only screen and (max-width: 992px) {
     #flex-container{
         flex-direction: column; 
     }
 
 
-}
+}*/
 
 /* Extra large devices (large laptops and desktops, 1200px and up) 
 @media only screen and (min-width: 1200px) {
