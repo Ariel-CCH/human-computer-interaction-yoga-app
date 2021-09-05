@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Human Computer Interaction: Yoga App</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!--==================== UNICONS ====================-->
+
+
+    <!--==================== SWIPER CSS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="style.css">
+      <!--==================== Fonts ====================-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  
+  </head>
+
+  <body>
+    <!--============================================ HEADER ============================================-->
+    <header class="header" id="header">
+       <!--==================== Process Bar ====================-->
+      <nav class='process bar'>   
+          <div id="progress-bar-container">
+              <ul>
+                  <li class="step step01 active"><div class="step-inner">Introduction</div></li>
+                  <li class="step step02"><div class="step-inner">Data Analysis</div></li>
+                  <li class="step step03"><div class="step-inner">Develop & Design</div></li>
+                  <li class="step step04"><div class="step-inner">Conclusion</div></li>
+                  
+              </ul>
+              
+              <div id="line">
+                  <div id="line-progress"></div>
+              </div>
+          </div>
+          </nav>
+      
+    </header>
+
+     <!--============================================ MAIN ============================================-->
+     <main class="main">
+       <div id="content-section">
+
+
+
+      <!--==================== Introduction ====================-->
+      <section class="section active" id="intro">
+      <div class='text_container'>
+          <div id="logo">
+            <img src="images/3-logo.png" id="front-logo">
+          </div>
+
+          <div>
+              <h1 id='intro_title'>1 Introduction</h1>
+              <p id='intro_txt'>
+                  Yoga is not merely a form of exercise for the body. It is a pathway towards peacefulness that enhances self-awareness. 
+                  The recent pandemic set a path to explore new online teaching and learning opportunities. 
+                  An increasingly recognized approach that has great potential in improving remote learning is mobile augmented reality (MAR) apps. 
+                  This project analyzes the effectiveness of augmented reality (AR) in educational settings and evaluates how MAR can be applied to existing yoga apps. 
+                  We came up with Y360, an AR yoga app that provides 360° video courses, enabling new immersive experiences for yoga practitioners. 
+                  We also performed usability testing on Y360 to evaluate the effectiveness of our mobile application and improved on our product through the feedback and suggestions provided by users.
+              </p>
+          </div>
+          <div id="problem space">
+              <h2>Problem Space and Goals</h2>
+              <p id='1.1 problem_space_txt'>
+                  Attending classes at yoga studios has become a trend as its environment helps with group healing and support. 
+                  However, the recent pandemic has changed the way people learn yoga: the majority of people choose to practice yoga at home 
+                  rather than attending classes physically. Challenges of learning yoga remotely arises with this transition and is exemplified 
+                  in the absence of interaction and feedback between learners and instructors.  
+                  This may lead to the lack of motivation to complete the workout and increases the risk of yoga-related injuries. 
+                  Y360 aims to address these challenges by introducing an interactive learning environment and personalized training courses 
+                  through employing action-recognition systems in MAR.
+              </p>
+          </div>
+      </div>
+          
+    </section>
+
+      <!--==================== Data Collection & Analysis ====================-->
+      <section class="section" id="data">
+      <div class='text_container'>
+        <!--title-->
+          <div>
+              <h1 id='data_title'>2 Data Collection and Analysis</h1>
+          </div>
+          <!--1-->
+          <div id='User Interview'>
+              <h2>User Interview</h2>
+              <p>
+                  In order to better understand our target users and address their pain points, we conducted semi-interviews with five students 
+                  from National Taiwan University who have been practicing yoga consistently for more than a year. 
+                  We focused on questions about their experiences, needs and expectations of yoga practices.
+              <br><br> 
+                  It is shown that yoga practitioners expect 
+                  an engaging environment where they can interact with yoga instructors and their peers. Their main pain points include lack of customized learning and personal space. 
+                  To address these user needs, we proposed 4 guidelines for our product design to create and enhance a learning environment for yoga practitioners by: 
+                  <ul>
+                      <li>providing sufficient and clear demonstrations and verbal instructions</li>
+                      <li>giving real-time feedback and correcting errors</li>
+                      <li>allowing users to create yoga sequences based on learners’ own preferences</li>
+                      <li>creating a platform where learners are able to share their learning experiences</li>
+               </ul>
+              </p>
+          </div>
+          <!--2-->
+          <div id='user persona'>
+              <!--2-1-->
+              <h2>User Persona</h2>
+              <p>
+                  Based on our understanding of our target users, we created a persona that guides our ideation process.
+              </p>
+              <!--2-2 emily persona-->
+              <div id="emily-persona">
+                 <!--start of flex container-->
+                <div id="flex-container">
+                <div id='persona picture'>
+                  <img src="images/emily.png" alt="persona picture" id="emily">
+                </div>
+                <div>
+                  <p id="emily-info">
+                    Gender: Female
+                    <br>Age: 21 years old
+                    <br>Occupation: Student
+                    <br>introverted <span>&#183</span> passionate <span>&#183</span> detail-oriented
+                  </p>
+                </div>
+                </div>
+                <!--end of flex container-->
+              
+                  <div id="about-emily">
+                  <h3>About Emily</h3>
+                  <p>
+                    Emily is a junior undergraduate student. She is a beginner in yoga and is dedicated to making yoga a habit. She attended yoga classes a few times but didn’t feel comfortable practicing with strangers around her. Besides, she lives 40-minutes away from the city center where the training center is located. Commuting between her home and the training center is time-consuming for her. She also has a tight schedule and having a heavy course load is stressful so she needs effective ways to relieve stress.
+                  </p>
+                  </div>
+  
+
+                <div id="motivation">
+                  <h3>Goals</h3>
+                  <p>
+                    <ul>
+                      <li>create a strong foundation through focusing on basic poses</li>
+                      <li>practice yoga at home and at her own pace</li>
+                      <li>manage time and money more effectively</li>
+                      <li>keep a consistent workout schedule</li>
+                    </ul>
+                  </p>
+                  <h3>Pain Points</h3>
+                  <p>
+                    <ul>
+                      <li>time and money constraints</li>
+                      <li>commuting problems</li>
+                      <li>feelings of anxiety in crowded places</li>
+                      <li>difficulties keeping up with the class</li>
+                    </ul>
+                  </p>
+                  <h3>Motivation</h3>
+                  <p>
+                    <ul>
+                      <li>360° instructional videos: enhance learning through the use of multiple perspective</li>
+                      <li>customized courses: create courses based on users preference and current yoga experience</li>
+                      <li>communication platforms: connect with other yoga enthusiasts</li>
+                      <li>motion detection: receive feedback for improvements</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+              <!--end of emily persona-->
+              
+          </div> <!--end of 2-->
+      </div> <!--end of text container-->
+  
+    </section>
+
+      <!--==================== Develop & Design ====================-->
+      <section class="section" id="develop">
+      <div class='text_container'>    
+          <div >
+              <h1 id='develop_title'>3 Develop and Design</h1>
+          </div>
+
+          <div id='product positioning'>
+              <h2>Product Positioning</h2>
+              <p>
+                  Before diving into the design process, we conducted a competitive analysis to gain a better understanding of the market environment we are operating in. We looked into two types of competitive forces, including yoga apps and a virtual reality yoga game and identified two main areas that have the potential for improvements: personalized courses and a holistic view of yoga positions. First, some products only provide limited courses that restrict user choices. We aim to provide both pre-designed courses and customized courses for users to plan their workout. Moreover, most videos in yoga applications only offer side and front views of instructors demonstrating poses. We hope to integrate AR technology to create an immersive experience where users can explore yoga poses further through rotating and zooming 360° interactive videos. Finally, it is our focus to improve the real-time feedback system so that users can reflect on their performance and improve in the next classroom. 
+              </p>
+
+          </div>
+          <div id='prototyping'>
+              <h2>Prototyping</h2>
+              <h3>Low-Fidelity Prototype Design</h3>
+              <p>Based on user research and competitive analysis, we prioritize our feature set to include Explore, My Courses, My Profile, and Community sections. With these features, we used sketching techniques to design a better user experience (UX).  </p>
+              <h4>Interaction Map</h3>
+                <div id="img-container-1">
+                  <img src="images/20-3.png" class="flow">
+                </div>
+              <h4>Perliminary User Flow</h3>
+                <div id="img-container">
+                  <img src="images/20-2.png" class="flow">
+                </div>
+
+              <h3>High-Fidelity Prototype Design</h3>
+              <p>To add personality to our product and connect with users, we used UX writing to craft the text copies that appear throughout the interface of our prototype. </p>
+              <h4>On-boarding</h4>
+              <p>We give users the options to set preferences for content and training levels, and also allow users to set daily reminders. This on-boarding process sets the tone for a flexible and customizable yoga journey.</p>
+
+               <!-- Swiper -->
+               <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/3-1.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/3-13.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/3-2.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/3-3.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/3-4.png">
+                  </div>
+                  
+                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- Swiper ending -->
+              <h4>Explore</h4>
+              <p>In addition to recommended courses, users are encouraged to discover the latest yoga trends. Users can also browse additional courses using search and advanced filtering features which allows them to find suitable courses based on their choices of level, focus, space, and positions. </p>
+            
+                <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/3-5.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-6.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-7.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-8.png">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- Swiper ending -->
+
+                <h4>Course Videos</h4>
+                <p>Boasts audio and visual instructions would guide users through poses step by step. Users can turn on their camera, using real-time visual feedback to learn and optimize poses by comparing their postures with the optimal position. We also provide audio feedback that corrects users movements. Instant feedback allows users to have interactive experiences like they do at a real-life studio and reduces the risk of injury caused by incorrect postures. By rotating the view of the instructor in the 360° videos, users are able to master their skills by studying our instructional library of poses and have a comprehensive view from multiple perspectives. </p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper swiper-video">
+                  <div class="swiper-wrapper video-wrapper">
+                    <div class="swiper-slide video">
+                      <img src="images/25.png">
+                    </div>
+                    <div class="swiper-slide video">
+                      <img src="images/26.png">
+                    </div>
+                    <div class="swiper-slide video">
+                      <img src="images/27.png">
+                    </div>
+                    <div class="swiper-slide video">
+                      <img src="images/28.png">
+                    </div>
+                   
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <!-- Swiper ending -->
+
+                <h4>My Courses and My Profile</h4>
+                <p>Users are able to build a library of yoga videos that they like to create personalized training experiences. We encourage users to set reminders and alerts for upcoming schedules and we also help users keep records of their practices. We designed a platform where users are able to stay connected with other learners. This direct connection enables users to share their experiences with other learners and exchange peer feedback. </p>
+                            
+
+                  <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/3-9.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-10.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-11.png">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-12.png">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- Swiper ending -->
+
+
+          </div>
+          <div id='usability testing'>
+              <h2>Usability Testing</h2>
+              <p>We performed usability testing on our Y360 prototype to learn more about user behavior and preferences, and identify problems in the design of the product. 
+
+                <br>
+                <br>Through our observations, we understand that participants were able to explore most of the application features before reading the instructions. For instance, they discovered features of selecting course levels, turned on audio instructions, and created personal training programs. One participant suggested a new sharing feature that allows users to share their yoga practicing videos on social media and connect their schedule to other calendar apps on their smartphones. 
+                <br>
+                <br>Some of the participants expressed reservations about online courses as they are not as rigorous as traditional face-to-face courses. One participant showed concerns about not having enough distance in their rooms to practice yoga which could negatively affect the use of the recording feature. 
+                </p>
+
+          </div>
+          <div id='perliminary evalutation'>
+              <h2>Perliminary Evaluation</h2>
+              <p>The results showed that while users discovered and enjoyed features of Y360, there are needs for more customized features and courses to make the app more user-friendly. A preliminary evaluation with points of improvements are put forward to enhance UX: </p>
+              <ul>
+                <li>
+                  <p>Feature Activation: 
+                    <br>To address the problem of users not being able to discover features of the product, we recommend improving feature activation in ways of making on-boarding contextual, segmenting users personalized messaging, and announcing new features. 
+                    </p>
+
+                </li>
+                <li>
+                  <p>
+                    A Multi-platform Connection: 
+                    <br>To improve data integration, we suggest a multi-platform connection that enables users to merge their yoga schedule into their existing calendars and sync reminders on their digital devices. Building connections that help make the link between Y360 and social media effective is also a point of improvement. This includes expanding sharing options to offer an engaging community through Instagram, Facebook, and Snapchat, etc.
+                  </p>
+                  
+                </li>
+                <li>
+                  <p>Alternative Yoga Poses: 
+                    <br>Helping users overcome learning barriers is important as some yoga poses are too difficult to do. We suggest adding a bonus feature that offers modified poses for beginner yoga students in preparation for advanced poses. Besides, it is noted that some yoga poses are challenging in a small space. To address this, providing yoga posture alternatives when the space is limited will be helpful for users.
+                    </p>
+                  
+                </li>
+                <li>
+                  <p>
+                    Advanced Audio Instructions: 
+                    <br>As some of the participants looked for more rigorous training to achieve their personal goals, we recommend providing additional audio instructions that give more details on how to correct and improve positioning. Besides, it is also suggested that a list of recommended courses is provided at the end of every course to guide users on the video courses to watch next.
+
+                  </p>                
+                </li>
+
+              </ul>
+
+          </div>
+      </div>
+    </section>
+
+      <!--==================== Conclusion & Future Work ====================-->
+      <section class="section" id='conclusion'>
+      <div class='text_container'>
+          <div >
+              <h1 id='conclusion_title'>4 Conclusion and Future Work</h1>
+              <p id='conlusion_txt'>
+                  In this paper, we looked at the challenges of online yoga learning, such as the lack of social interaction and motivation, and highlighted the mental well-being of the general population during the COVID-19 pandemic. We created Y360, a yoga mobile application that integrates AR technology, providing an interactive and immersive learning environment. Y360 provides three core features: (1) a collection of 360° video courses; (2) an automatic detection and recognition of practitioner actions; and (3) audio instructions and real-time feedback. Our findings suggest that AR enhances remote learning as it facilitates human interactions. The combination of interactivity and engagement could enhance the ability of learners to remember what they’ve learned and offer new opportunities for interpersonal connections. High-quality UX in yoga apps is associated with personalized training and interactive audio instructions. Personalized training allows users to go in depth on specific poses and focus on personal goals, while interactive audio instructions are essential for recreating the intimacy of in-person classes and avoiding yoga-related injuries.
+
+                  <br><br>However, our prototype has its own limitations. According to usability testing, it would be helpful to create additional features to make the mobile application more user-friendly. It will be important that the future work investigates ways to ensure a personalized and flexible experience for users, from on-boarding to choosing video courses to receiving feedback. Moreover, as we mainly focused on the user interface design of our prototype, there is room for improving the technical design, especially the integration of AR and mobile applications. We hope our work can inspire researchers and designers to create more effective tools to make AR in apps more inclusive. In particular, we encourage future work on designing and evaluating techniques that enable users to enjoy AR within a small physical space.
+
+              </p>
+          </div>
+           <!--==================== References ====================-->
+     
+          <div id="blank">
+
+          </div>
+          
+           <h1 id="reference_title">References</h1>
+          <p id="references_txt">
+            Chen, Y. & Zhang, J. (2011). Discussion on the Benefits and Injuries of Yoga. Chinese Journal. of Physical Education, 24(2), 38-47. 
+            <br><br>Jien, Y. (2008). Research on Yoga Consumer Behavior and Service Demand in Taipei City. (Unpublished master's thesis). National Taiwan Normal University Sports and Leisure Management Institute, Taipei.
+            <br><br>Kesim, M., & Ozarslan, Y. (2012). Augmented reality in education: current technologies and the potential for education. Procedia - Social and Behavioral Sciences, 47, 297-302.
+            <br><br>Kiyokawa, K., Billinghurst, M., Hayes, S. E., Gupta, A., Sannohe, Y., & Kato, H. (2002). Communication. Behaviors of Co-Located Users in Collaborative AR Interfaces. Proceedings. International Symposium on Mixed and Augmented Reality, 139-148. doi: 10.1109/ISMAR.2002.1115083
+            <br><br>Loia, V., & Orciuoli, F. (2019).  ICTs for exercise and sport science: focus on augmented. reality. Journal of Physical Education and Sport, 19(5), 1740-1747. doi: 10.7752/jpes.2019.s5254 
+            <br><br>Luo, F. (2011). The Relationship Between the Degree of Professionalization of Yoga. Participants and Their Motivation and Obstacles to Participation. (Unpublished master's thesis). Asia University, Taichung.
+  
+            <br><br>Michalsen, A., Grossman, P., Acil, A., Langhorst, J., Lüdtke, R., Esch, T. Stefano, G. B., & Dobos, G. J. (2005). Rapid stress reduction and anxiolysis among distressed women as a consequence of a three-month intensive yoga program. Medical Science Monitor, 11(12), 555-561.
+            <br><br>Shriram K. V., Vivek, C. & Srivathsan, S. (2015). An Intelligent Boxing Application through Augmented. Reality for Two users – Human Computer Interaction Attempt. Indian Journal of Science and Technology, 8(34), 1-7. doi: 10.17485/ijst/2015/v8i34/73731
+            <br><br>Yovcheva, Z., Buhalis, D., & Gatzidis, C. (2012). Overview of Smartphone Augmented Reality. Applications for Tourism. e-Review of Tourism Research, 10(2), 63-66.
+  
+            <br><br>Zhuang, Y. (2009). Playing Sport, Practicing Yoga and Doing Gender: Gender Practices of Male Yoga. Participants. (Unpublished master's thesis). National Taiwan University, Taipei.
+  
+          </p>
+        
+      </div> 
+    </section>
+          
+  </div>
+
+    <!--end of "content-section"-->
+
+   
+  </main>
+
+    <!--=================================================  FOOTER ============================================-->
+    <footer class="footer">
+
+            
+    </footer>
+
+
+    <!--================================================  JS ================================================-->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 2,
+    centeredSlides: true,
+    grabCursor: true,
+    
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+      
+  
+      
+    </script>
+
+
+        <!-- Main JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="JS/script.js"></script>
+
+  </body>
+</html>
