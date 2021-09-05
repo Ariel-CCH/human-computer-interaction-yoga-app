@@ -383,7 +383,7 @@ img{
         position:absolute;
         width:80%;
         bottom:0;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     #flex-container{
         flex-direction: column; 
@@ -400,7 +400,7 @@ img{
         position:absolute;
         width:75%;
         bottom:0;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     #flex-container{
         flex-direction: column; 
