@@ -1,0 +1,409 @@
+
+
+html, body{
+   /*from demo*/
+    position: relative;
+    height: 100%;
+
+    font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: justify;
+}
+
+h1{
+    margin-top: 35px;
+}
+
+/***********************slider demo css*********************/
+.swiper {
+   height: 460px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color:rgb(230,230,250,0.8);;
+   border-radius: 2%;
+  }
+
+.swiper-video{
+    height: 350px;
+
+
+}
+.swiper-wrapper{
+    align-items: center;
+}
+
+  .swiper-slide {
+
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: rgb(230,230,250,0);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+  }
+
+.video:not(:first-child){
+    margin-left: 45px;
+  
+}
+.video-wrapper{
+    margin:0px;
+
+}
+
+.video img{
+    display: block;
+    object-fit: cover;
+
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide-active{
+      transform: scale(1.2);
+      transition: .4s;
+  }
+
+
+
+  .swiper-button-next{
+      color:white;
+
+     
+  }
+  .swiper-button-prev{
+      color:#aaa;
+  }
+  .swiper-pagination{
+      color:#aaa
+  }
+/***********************slider demo css*********************/
+
+
+
+main{
+    margin-top: 150px;
+}
+
+nav{
+    position: absolute;
+    z-index: 2;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:darkorchid;
+}
+
+.text_container{
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#logo{
+    text-align: center;
+    
+}
+
+#front-logo{
+    width:250px;
+    
+}
+#emily-persona{
+    margin-top:5%;
+    margin-bottom:5%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color:darkslategrey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+
+}
+#emily{
+    width:230px;
+    height:auto;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left:50px;
+    margin-right:50px;
+
+}
+
+
+span{
+    content: "\00B7";
+}
+#flex-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+#card{
+    margin-left:100px;
+    margin-right:100px;
+}
+#about-emily{
+    padding-top: 20px;
+}
+#progress-bar-container {
+	/*position:relative;*/
+    position:fixed;
+    overflow: hidden;
+    top:0;
+    background-color: white;
+	width:100%;
+	margin:auto;
+	height:90px;
+    padding-top: 10px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  
+
+	/*margin-top:65px;*/
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+    
+}
+
+
+/* I don't think I want this
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+     
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+       	 
+	background: linear-gradient(to right, #c777d1 0%,#fff 100%); 
+}
+end: I don't think I want this*/
+
+/* horizontal look*/
+#progress-bar-container li {
+    display:block;
+	list-style:none;
+	float:left;
+	width:25%;     /*the space between li*/
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align: bottom;
+	height:60px;
+    position: relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+    font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+/* the line dots*/
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:8px;
+	height:8px;
+	background:#777;
+	margin:auto;
+	border:solid 4px #fff;
+	border-radius:50%;
+	margin-top:67px; /*position of the dots*/
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+#progress-bar-container li:hover:after {
+	background:darkorchid;
+}
+
+#progress-bar-container li.active:after {
+	background:darkorchid;
+}
+
+/*line*/
+
+#progress-bar-container #line {
+	width: 80%; /*lenght of the line*/
+	margin:auto;
+	background: #eee;
+	height:3px;
+	position:absolute;
+	left:10%;
+	top:60px; /*position of the line*/
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+
+/*line progress*/
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background:darkorchid;	 
+	background: (tolinear-gradient right,darkorchid 0%,mediumpurple 100%); 
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+.flow{
+    width:100%;
+    height:auto;
+    border-radius: 0;
+    
+}
+
+
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+#blank{
+    padding: 40px;
+}
+#reference_title{
+    color:#777;
+    font-size:.8em;
+    text-align: center;
+}
+#references_txt{
+    color:#777;
+    font-size:.5em;
+    text-align: justify;
+}
+
+.footer{
+    padding: 30px;
+}
+
+/*display section*/
+#content-section .section {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#content-section .section.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+
+/**********media query*****************/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 480px) {
+    .text_container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #flex-container{
+        flex-direction: column; 
+    }
+    .emily-persona{
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    #flex-container{
+        flex-direction: column; 
+    }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {
+
+}*/
