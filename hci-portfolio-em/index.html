@@ -428,13 +428,13 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 2,
+ <script>
+
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
     centeredSlides: true,
     grabCursor: true,
-    
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -443,11 +443,25 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    // Responsive breakpoints
+     breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
   });
-
-
-      
-  
       
     </script>
 
