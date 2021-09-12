@@ -66,10 +66,11 @@ h1{
 
   }
 
-.video:not(:first-child){
+/*.video:not(:first-child){
     margin-left: 45px;
   
-}
+}*/
+
 .video-wrapper{
     margin:0px;
 
@@ -394,6 +395,14 @@ img{
         margin-left: 5%;
         margin-right: 5%;
 
+    }
+    .video img{
+        display: block;
+        object-fit: cover;
+    
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
     }
 
 }
